@@ -5,6 +5,19 @@ Coords-Timezone is a JavaScript library to calculate timezone information and lo
 ## Demo
 You can check out a live demo of the library [here](https://eer50.github.io/coords-timezone/).
 
+## Installation
+You can include it directly in your HTML file using a CDN:
+
+### Using jsDelivr
+```
+<script src="https://cdn.jsdelivr.net/npm/coords-timezone"></script>
+```
+
+### Using unpkg
+```
+<script src="https://unpkg.com/coords-timezone"></script>
+```
+
 ## Example Usage
 ```
 const latitude = 30.0444;
