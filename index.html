@@ -97,6 +97,17 @@
                 <p><strong>Current Time:</strong> ${info.current}</p>
             `;
         }
+        document.addEventListener('DOMContentLoaded', (event) => {
+        // Set the latitude and longitude using Geolocation API
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition((position) => {
+                document.getElementById('latitude').value = position.coords.latitude;
+                document.getElementById('longitude').value = position.coords.longitude;
+            });
+        } else {
+            alert("Geolocation is not supported by this browser.");
+        }
+    });
     </script>
 </body>
 </html>
